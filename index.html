@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="design.css">
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="topBar">
+            <div class="colorHolder"> <h1>  </h1> </div>
+            <div class="title"> <h1> MY PORTFOLIO </h1> </div>
+            <div class="home"> <a href="#homePage"> <h2> Home </h2> </a> </div>
+            <div class="about"> <a href="#aboutPage"> <h2>About</h2> </a> </div>
+            <div class="works"> <a href="#worksPage"> <h2> Experiences </h2> </a> </div>
+            <div class="contact"> <a href="#contactPage"> <h2> Contact </h2> </a> </div>
+            <div> <img class="selfPic" src="Assets/frontpg.jpg" alt="portfolio pic" width="500" height="600"> </div>
+            <div class="colorHolder2"> <h1>  </h1> </div>
+        </div>
+
+        <div class="homePage" id="homePage">
+            <div class="txt1"> <h2 style="color: white;">Hi!</h2> </div>
+            <div class="txt2"> <h1>My name is </h1> </div>
+            <div class="txt3"> <h1>Joaquin Cholo C. Dabao</h1> </div>
+            <div class="txt4"> <h1>An Information Technology college student<br> from PUP Sta. Maria Bulacan.</h1> </div>
+            
+        </div>
+
+        <div class="aboutPage" id="aboutPage">
+        
+            <div class="title"> <h1>ABOUT ME</h1> </div>
+            <div class="txt1"> <h1>I am . . .</h1> </div>
+            <div class="txt2"> <h2>A 22 year old IT College student from Polytechnic University of the Philippines</h2> </div>
+            <div class="txt3"> <h2>An aspiring Network Administrator and IT Professional</h2> </div>
+            <div class="txt4"> <h2>Born on June 20, 2001</h2> </div>
+            <br>
+            <br>
+            <div class="txt5"> <h1>Hard Skills</h1> 
+                <ul class="enlarged-list">
+                    <li> Knowledgeable in Networking </li>
+                    <li> Knowledgeable in Network Troubleshooting </li>
+                    <li> Experienced about computers and hardware</li>
+                    <li> Photo editing in Photoshop and Paint.net</li>
+                    <li> Video editing and after effects in Adobe Premiere Pro</li>
+                </ul>
+            </div>
+            <div class="txt6"> <h1>Soft Skills</h1> 
+                <ul class="enlarged-list">
+                    <li> Can communicate well </li>
+                    <li> Can work alone or in a team </li>
+                    <li> Problem solver</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="worksPage" id="worksPage">
+            <div class="title"> <h1>Experiences</h1> </div>
+            <div class="colorHolder3"> <h1>  </h1> </div>
+            <div class="colorHolder4"> 
+                <img class="worksPic" src="Assets/work1.jpg" alt="works" > 
+                <img class="worksPic" src="Assets/work2.jpg" alt="works" > 
+                <img class="worksPic" src="Assets/work3.jpg" alt="works" > 
+                
+            </div>
+            <div class="picDesc"> <h2>PC Repair/Maintenance</h2> </div>
+            <div class="picDesc"> <h2>Basic office work</h2> </div>
+            <div class="picDesc"> <h2>Undergoing Udemy Certification</h2> </div>
+            <div class="colorHolder5"> <h1>  </h1> </div>
+        </div>
+
+        <div class="contactPage" id="contactPage">
+            <div class="title"> <h1>CONTACT ME</h1> </div>
+            <div class="txt1"> <h1>For inquiries please contact me via below</h1> </div>
+            <div class="txt2"> <h1>Mobile Number: </h1> <h2>09566526656</h2> </div>
+            <div class="txt3"> <h1>Email: </h1> <h2>joaquindabao61@gmail.com</h2> </div>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            autoSlideShow();
+
+            function autoSlideShow() {
+            var i;
+            var x = document.getElementsByClassName("worksPic");
+            var desc = document.getElementsByClassName("picDesc");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                desc[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";  
+            if (myIndex > desc.length) {myIndex = 1}
+            desc[myIndex-1].style.display = "block";  
+            setTimeout(autoSlideShow, 4000); // Change image every 4 seconds
+            }
+        </script>
+    </body>
+</html>

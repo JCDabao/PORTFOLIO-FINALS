@@ -1,0 +1,404 @@
+html
+{
+    background-image: url(Assets/portfolio-background-header.jpg);
+    overflow: hidden; 
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: Garamond, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 2px #000000;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-shadow: 1px 2px 1px #000000;
+}
+.topBar
+{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.colorHolder
+{
+    position: absolute;
+    left: 35px;
+    top: -5%;
+    height: 160px;
+    width: 95%;
+    background-color: #84d4b7;
+    box-shadow: 0 5px 2px -2px #000000;
+    z-index: 11;
+}
+
+.title
+{
+    text-align: center;
+    font-size: 150%;
+    position: relative;
+    width: 25%;
+    left: 37%;
+    top: -15px;
+    cursor: default;
+    z-index: 12;
+}
+
+.home
+{
+    position: absolute;
+    left: 10%;
+    top: 45px;
+    cursor: default;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    z-index: 13;
+}
+
+.about
+{
+    position: absolute;
+    left: 30%;
+    top: 45px;
+    cursor: default;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    z-index: 13;
+}
+
+.works
+{
+    position: absolute;
+    left: 65%;
+    top: 45px;
+    cursor: default;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    z-index: 13;
+}
+
+.contact
+{
+    position: absolute;
+    left: 85%;
+    top: 45px;
+    cursor: default;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    z-index: 13;
+}
+
+.home:hover
+{
+    transform: scale(1.5);
+    text-shadow: 5px 5px 10px;
+}
+
+.about:hover
+{
+    transform: scale(1.5);
+    text-shadow: 5px 5px 10px;
+}
+
+.works:hover
+{
+    transform: scale(1.5);
+    text-shadow: 5px 5px 10px;
+}
+
+.contact:hover
+{
+    transform: scale(1.5);
+    text-shadow: 5px 5px 10px;
+}
+
+.selfPic
+{
+    position: absolute;
+    border-radius: 25px;
+    top: 10%;
+    right: 5%;
+    box-shadow: 0px 5px 15px;
+    z-index: 1;
+}
+
+.homePage .txt1
+{
+    font-size: 380%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 5;
+}
+
+.homePage .txt2
+{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: 5;
+}
+
+.homePage .txt3
+{
+    font-size: 200%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: 5;
+}
+
+.homePage .txt4
+{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    z-index: 5;
+}
+
+.homePage .txt5
+{
+    position: absolute;
+    top: 51%;
+    left: 32%;
+    z-index: 5;
+}
+
+.colorHolder2
+{
+    position: absolute;
+    left: 2.3px;
+    top: 90%;
+    height: 160px;
+    width: 100%;
+    background-color: rgb(97, 97, 97);
+    box-shadow: 0 -5px 10px -2px #000000;
+}
+
+.aboutPage
+{
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+    position: absolute;
+    top: 1920px;
+    left: 15%;
+}
+
+.aboutPage .title
+{
+    font-size: 240%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+}
+
+.aboutPage .txt1
+{
+    font-size: 140%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 1;
+}
+
+.aboutPage .txt2
+{
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    z-index: 1;
+}
+
+.aboutPage .txt3
+{
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    z-index: 1;
+}
+
+.aboutPage .txt4
+{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+}
+
+.aboutPage .txt5
+{
+    position: absolute;
+    top: 44%;
+    left: 15%;
+    z-index: 1;
+    color: #ffffff;
+    text-size-adjust: 15px;
+}
+
+.aboutPage .txt6
+{
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    z-index: 1;
+    color: #ffffff;
+    text-size-adjust: 15px;
+}
+.aboutPage .enlarged-list
+{
+    font-size: 25px;
+    
+}
+
+
+.worksPage
+{
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+    position: absolute;
+    top: 3920px;
+    left: 15%;
+}
+
+.worksPage .title
+{
+    font-size: 240%;
+    position: absolute;
+    top: 69%;
+    left: 23%;
+    z-index: 1;
+}
+
+.colorHolder3
+{
+    position: absolute;
+    left: 3.5%;
+    top: 12%;
+    height: 55%;
+    width: 60%;
+    background-color: rgb(112,128,144);
+    box-shadow: 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.colorHolder4
+{
+    position: absolute;
+    left: 5.5%;
+    top: 14.5%;
+    height: 50%;
+    width: 56%;
+    background-color: rgba(240,248,255, 1);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.colorHolder4 img
+{
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px;
+    z-index: 1;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    float: left;
+}
+
+.worksPage .picDesc
+{
+    text-align: center;
+    color: aliceblue;
+    font-size: 125%;
+    position: absolute;
+    top: 65%;
+    left: 26%;
+    z-index: 1;
+}
+
+.colorHolder5
+{
+    position: absolute;
+    left: 4.5%;
+    top: 19%;
+    height: 55%;
+    width: 58%;
+    background-color: rgb(112,128,144);
+    box-shadow: 0px 5px 15px;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.contactPage
+{
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+    position: absolute;
+    top: 6920px;
+    left: 15%;
+}
+
+.contactPage .title
+{
+    font-size: 190%;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    z-index: 1;
+}
+
+.contactPage .txt1
+{
+    font-size: 140%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 1;
+}
+
+.contactPage .txt2
+{
+    font-size: 140%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 1;
+}
+
+.contactPage .txt3
+{
+    font-size: 140%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    z-index: 1;
+}
+
+.contactPage h2
+{
+    font-weight: lighter;
+}
+
+a
+{
+    cursor: default;
+    text-decoration: none;
+    color: #fffefe;
+}
